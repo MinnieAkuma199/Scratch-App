@@ -1,4 +1,4 @@
-var myModal = document.getElementById("myModal");
+var mainModal = document.getElementById("mainModel");
 var myInput = document.getElementById("myInput");
 
 function getDogsNow() {
@@ -14,10 +14,7 @@ function getDogsNow() {
 getDogsNow();
 
 // Modal
-$("myModal").click("shown.bs.modal"),function (event) {
+$("mainModal").click("shown.bs.modal"),function (event) {
     event.preventDefault
     myInput.focus();
-}
-// myModal.addEventListener("shown.bs.modal", function () {
-  
-// });
+} 
