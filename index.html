@@ -11,46 +11,43 @@
 </head>
 <body>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mainModal">
+        Click here!
     </button>
     
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="mainModal" tabindex="-1" aria-labelledby="mainModal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title">SCRATCH.com</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body"> 
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
-                            <h4 class="card-title">Instructions </h4>
-                            <h5>Click the button below to open a form and provide info for the following:</h5>
+                            <h4 class="card-title">Welcome!</h4>
+                            <h5>Plug your info in below to find your next bestfriend🐶</h5>
                             <form>
                                 <div class="form-group">
-                                    <label for="exampleFormControlInput1">Name</label>
+                                    <label for="exampleFormControlInput1">Your Name</label>
                                     <input type="name" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="John Smith">
+                                        placeholder="Lily Pie">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Preferred Spice Level</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>Mild</option>
-                                        <option>Medium</option>
-                                        <option>Spicy</option>
-                                        <option>Mama Hold My Booty!</option>
+                                    <label for="exampleFormControlSelect1">Preffered Animal Type</label>
+                                    <select class="form-control">
+                                        <option id="dogSelection">Dog</option>
+                                        <option>Rock</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleFormControlSelect2">Expected Hourly Wage</label>
-                                    <select multiple class="form-control" id="exampleFormControlSelect2">
-                                        <option>$2</option>
-                                        <option>$12</option>
-                                        <option>$20</option>
-                                        <option>$400</option>
-                                        <option>$500</option>
+                                    <label for="exampleFormControlSelect2">Animal Size</label>
+                                    <select class="form-control">
+                                        <option id="small">Small</option>
+                                        <option id="medium">Medium</option>
+                                        <option id="large">Large</option>
+                                        <option id="xl">XL</option>
                                     </select>
                                 </div>
                             </form>
@@ -58,12 +55,19 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">I'm not Ready!</button> -->
+                    <button type="button" class="btn btn-primary"> Your matches🐶</button>
                 </div>
             </div>
         </div>
+        <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 </body>
 </html>
