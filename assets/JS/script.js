@@ -33,17 +33,33 @@ function userLocation(lat, lon) {
     .then((data) => console.log(data))
     .catch((err) => console.log(err));
 }
+
+//modal
 $("mainModal").click("shown.bs.modal"),
   function (event) {
     event.preventDefault;
     myInput.focus();
   };
 
+//creating a click event for storing in local memory user name and preferences
+$("#userMatchesBtn").click(function (event) {
+  event.preventDefault();
+  var userName = $("#nameInput").val();
+  localStorage.setItem("Name", userName);
+
+  var animalSelection = $("#animalSelection").val();
+  localStorage.setItem("animalType", animalSelection);
+
+  var animalSize = $("#animalSize").val();
+  localStorage.setItem("animalSize", animalSize);
+});
+
 //Startup page JS//
 var startDiv = $("#startup-page");
 var mainDiv = $("#main-page");
-var modalButton = $("#modal-submit");
+var modalButton = $("#userMatchesBtn");
 console.log(modalButton);
+
 //Hide main div on page startup
 init();
 function init() {
