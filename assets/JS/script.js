@@ -1,14 +1,5 @@
-var mainModal = document.getElementById("mainModel");
+var mainModal = document.getElementById("mainModal");
 var myInput = document.getElementById("myInput");
-
-// Modal
-// $("myModal").click("shown.bs.modal"),function (event) {
-//     event.preventDefault
-//     myInput.focus();
-// }
-// myModal.addEventListener("shown.bs.modal", function () {
-
-// });
 
 var userLat;
 var userLon;
@@ -27,7 +18,7 @@ function userLocation(lat, lon) {
     dataType: "json",
     contentType: "application/json",
     headers: {
-      "Authorization": "LFSvPQMT",
+      Authorization: "LFSvPQMT",
     },
     data: JSON.stringify({
       filterProcessing: "1 and 2",
@@ -39,10 +30,36 @@ function userLocation(lat, lon) {
     }),
   })
 
-  .then((data) => console.log(data))
-  .catch((err) => console.log(err));
+    .then((data) => console.log(data))
+    .catch((err) => console.log(err));
 }
-$("mainModal").click("shown.bs.modal"),function (event) {
-    event.preventDefault
+$("mainModal").click("shown.bs.modal"),
+  function (event) {
+    event.preventDefault;
     myInput.focus();
-} 
+  };
+
+//Startup page JS//
+var startDiv = $("#startup-page");
+var mainDiv = $("#main-page");
+var modalButton = $("#modal-submit");
+console.log(modalButton);
+//Hide main div on page startup
+init();
+function init() {
+  mainDiv.hide();
+}
+
+//Hide startup div and show main div on modal click
+modalButton.on("click", hideStart);
+
+function hideStart() {
+  startDiv.hide();
+  mainDiv.show();
+}
+
+// // Submit info. from modal upon click as well as hide modal
+// function submitModal() {
+//   e.preventDefault();
+//   mainModal.hide();
+// }
