@@ -11,9 +11,10 @@ navigator.geolocation.getCurrentPosition((data) => {
 });
 
 function userLocation(lat, lon) {
+  
   $.ajax({
     processData: false,
-    url: `https://test1-api.rescuegroups.org/v5/public/animals/search/available/`,
+    url: `https://test1-api.rescuegroups.org/v5/public/animals/search/available/dogs`,
     method: "POST",
     dataType: "json",
     contentType: "application/json",
@@ -51,4 +52,5 @@ $("#userMatchesBtn").click(function (event) {
 
   var animalSize = $("#animalSize").val();
   localStorage.setItem("animalSize", animalSize);
+  console.log(localStorage.getItem("animalSize"));
 })
