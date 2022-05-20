@@ -1,4 +1,4 @@
-var mainModal = document.getElementById("mainModel");
+var mainModal = document.getElementById("mainModal");
 var myInput = document.getElementById("myInput");
 
 var userLat;
@@ -18,7 +18,7 @@ function userLocation(lat, lon) {
     dataType: "json",
     contentType: "application/json",
     headers: {
-      "Authorization": "LFSvPQMT",
+      Authorization: "LFSvPQMT",
     },
     data: JSON.stringify({
       filterProcessing: "1 and 2",
@@ -30,25 +30,38 @@ function userLocation(lat, lon) {
     }),
   })
 
-  .then((data) => console.log(data))
-  .catch((err) => console.log(err));
+    .then((data) => console.log(data))
+    .catch((err) => console.log(err));
 }
 
-//modal 
-$("mainModal").click("shown.bs.modal"),function (event) {
-    event.preventDefault
+//modal
+$("mainModal").click("shown.bs.modal"),
+  function (event) {
+    event.preventDefault;
     myInput.focus();
-} 
+  };
 
 //creating a click event for storing in local memory user name and preferences
 $("#userMatchesBtn").click(function (event) {
   event.preventDefault();
   var userName = $("#nameInput").val();
-  localStorage.setItem("Name", userName)
+  localStorage.setItem("Name", userName);
+  console.log(userName);
 
   var animalSelection = $("#animalSelection").val();
   localStorage.setItem("animalType", animalSelection);
 
   var animalSize = $("#animalSize").val();
   localStorage.setItem("animalSize", animalSize);
-})
+});
+
+//Startup page JS//
+var modalButton = $("#userMatchesBtn");
+console.log(modalButton);
+
+//Switch HTML files **will not work until main html is connected, confirmed that it worked w/ a test html though.
+modalButton.on("click", function () {
+  if ((window.location.href = "index.html")) {
+    window.location.replace("index2.html");
+  }
+});

@@ -1,0 +1,17 @@
+.startup-jumbotron {
+    text-align: center;
+    background-color: tan;
+    border-bottom: 10px solid #64381b;
+    margin-bottom: 2em;
+}
+
+.snoot-img {
+    margin: 5em;
+    border-radius: 25px;
+    border: 5px solid #64381b;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.modal-trigger-btn {
+    opacity: 0.0;
+}
