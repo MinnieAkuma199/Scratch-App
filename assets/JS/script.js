@@ -21,18 +21,23 @@ function userLocation(lat, lon) {
     headers: {
       "Authorization": "LFSvPQMT",
     },
-    data: JSON.stringify({
-      filterProcessing: "1 and 2",
-      filterRadius: {
-        miles: 100,
-        lat: lat,
-        lon: lon,
-      },
-    }),
-  })
-
-  .then((data) => console.log(data))
-  .catch((err) => console.log(err));
+    // data: JSON.stringify({
+    //   filterProcessing: "1 and 2",
+    //   filterRadius: {
+    //     miles: 100,
+    //     lat: lat,
+    //     lon: lon,
+    //   },
+    })
+  .then(function(data){
+  console.log(data.data)
+var selectEl = $("#animalSize").val()
+console.log(selectEl)
+var filteredAnimal = []
+$.each(data.data, function(i, animal) {
+// write an if statement to check if the current object we are iterating over is equal to the value of that we store in selectEL
+})
+})
 }
 
 //modal 
