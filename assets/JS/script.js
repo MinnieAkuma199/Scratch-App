@@ -28,10 +28,20 @@ function userLocation(lat, lon) {
         lon: lon,
       },
     }),
-  })
-
-    .then((data) => console.log(data))
-    .catch((err) => console.log(err));
+  }).then(function (data) {
+    console.log(data.data);
+    var selectEl = $("#animalSize").val();
+    console.log(selectEl);
+    var filteredAnimal = [];
+    $.each(data.data, function (i, animal) {
+      // write an if statement to check if the current object we are iterating over is equal to the value of that we store in selectEL
+      if (animal.attributes.sizeGroup === selectEl) {
+        console.log({ animal });
+        filteredAnimal.push(animal);
+      }
+    });
+    console.log(filteredAnimal);
+  });
 }
 
 //modal
@@ -61,7 +71,17 @@ console.log(modalButton);
 
 //Switch HTML files **will not work until main html is connected, confirmed that it worked w/ a test html though.
 modalButton.on("click", function () {
-  if ((window.location.href = "index.html")) {
-    window.location.replace("index2.html");
-  }
+  window.location.replace("indexCarousel.html");
 });
+
+//Display name from local storage on main page
+function displayName() {
+  console.log(window.location.href);
+  if (window.location.toString().includes("indexCarousel")) {
+    console.log("test");
+    var userName = localStorage.getItem("Name");
+    document.querySelector("#message").textContent =
+      "Welcome " + userName + "!";
+  }
+}
+displayName();
