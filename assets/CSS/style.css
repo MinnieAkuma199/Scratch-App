@@ -1,24 +1,17 @@
-/* Begin Startup Page CSS */
-body {
-    background-image: src="././assets/Images/paws.jpg";
-}
-
 .startup-jumbotron {
     text-align: center;
     background-color: tan;
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #64381b;
     margin-bottom: 2em;
 }
 
 .snoot-img {
     margin: 5em;
     border-radius: 25px;
+    border: 5px solid #64381b;
+    box-shadow: 10px 10px 5px grey;
 }
 
-.startup-footer {
-    text-align: center;
-    background-color: tan;
-    border-top: 10px solid black;
-    margin-top: 2em;
+.modal-trigger-btn {
+    opacity: 0.0;
 }
-/* End Startup Page CSS */

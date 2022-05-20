@@ -16,28 +16,26 @@
 </head>
 <body>
     <!-- Begin Startup Page -->
-    <div id="startup-page">
+    <div class="bg-image" style="background-image: url('./assets/Images/paws.jpg'); height: 100vh;">
         <header class="startup-jumbotron">
             <h1 class="display-3">Welcome to SCRATCH!</h1>
             <h2 class="lead">Boop the dog's nose to start finding your next furry friend!</h2>
         </header>
-
+        
         <!--Start page main img-->
         <div class="d-flex justify-content-center align-items-center">
                 <img class="img-fluid snoot-img" src="./assets/Images/dog-snoot.jpg"/>
                     <div class="position-absolute justify-content-center align-items-center">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#mainModal">
+                        
+                        <!-- Modal trigger button -->
+                        <button type="button" class="modal-trigger-btn" data-bs-toggle="modal" data-bs-target="#mainModal">
                             <p class="text-transparent">BOOP</p>
                         </button>
                     </div>
         </div>
-        <footer class="startup-footer">
-            <p class="lead">Made with &#128149 by the Wolfpack</p>
-        </footer>
-        </div>
     </div>
-    
+    <!-- End Startup Page -->
+
     <!-- Modal -->
     <div class="modal fade" id="mainModal" tabindex="-1" aria-labelledby="mainModal" aria-hidden="true">
         <div class="modal-dialog">
@@ -78,25 +76,22 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" id="userMatchesBtn"> Your matches🐶</button>
+                    <button type="button" class="btn btn-primary" id="userMatchesBtn" data-bs-dismiss="modal" aria-label="Close"> Your matches🐶</button>
                 </div>
             </div>
         </div>
-
-    <!-- Main Page Test -->
-    <div id="main-page">
-        <p>I'm the main page!</p>
-    </div>
     
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
-    <!-- bootstrap -->
+    <!-- bootstrap **NOTE: do we have duplicate bootstraps?? There's also another one up top.-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
     <script src="./assets/JS/script.js"></script>
 </body>
 </html>

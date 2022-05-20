@@ -46,6 +46,7 @@ $("#userMatchesBtn").click(function (event) {
   event.preventDefault();
   var userName = $("#nameInput").val();
   localStorage.setItem("Name", userName);
+  console.log(userName);
 
   var animalSelection = $("#animalSelection").val();
   localStorage.setItem("animalType", animalSelection);
@@ -55,27 +56,12 @@ $("#userMatchesBtn").click(function (event) {
 });
 
 //Startup page JS//
-var startDiv = $("#startup-page");
-var mainDiv = $("#main-page");
 var modalButton = $("#userMatchesBtn");
 console.log(modalButton);
 
-//Hide main div on page startup
-init();
-function init() {
-  mainDiv.hide();
-}
-
-//Hide startup div and show main div on modal click
-modalButton.on("click", hideStart);
-
-function hideStart() {
-  startDiv.hide();
-  mainDiv.show();
-}
-
-// // Submit info. from modal upon click as well as hide modal
-// function submitModal() {
-//   e.preventDefault();
-//   mainModal.hide();
-// }
+//Switch HTML files **will not work until main html is connected, confirmed that it worked w/ a test html though.
+modalButton.on("click", function () {
+  if ((window.location.href = "index.html")) {
+    window.location.replace("index2.html");
+  }
+});
