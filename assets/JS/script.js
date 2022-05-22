@@ -78,7 +78,6 @@ modalButton.on("click", function () {
 function displayName() {
   console.log(window.location.href);
   if (window.location.toString().includes("indexCarousel")) {
-    console.log("test");
     var userName = localStorage.getItem("Name");
     document.querySelector("#message").textContent =
       "Welcome " + userName + "!";
