@@ -13,6 +13,7 @@ Every year about 6.3 Million Dogs are abandoned or given to shelters in the Unit
 
 User Story: Adopting and finding the right pet is tough.  As a user I want a resource to view multiple dogs up for adoption within my area or an area of my choosing as well as learn more about each dog including basic facts like age, sex, breed, fun facts.  I’d also like to be able to input my contact information in order to request a meeting.
 
+![Scratch wireframe screenshot](https://user-images.githubusercontent.com/104277073/169726984-74b22acc-6501-46f9-86f3-a51ee3ee6e34.jpg)
 
 **APIs to be Used:** 
 
@@ -42,14 +43,11 @@ All API's listed in the proposal were used to the best of our ability but in fut
 
 ## Final App Screenshots
 
+![Scratch start page screenshot](https://user-images.githubusercontent.com/104277073/169727020-af3dcbef-4242-4450-beb5-8c177b415049.jpg)
 
+![Scratch modal screenshot](https://user-images.githubusercontent.com/104277073/169727059-db776fc5-5818-445b-9ab2-3cf741e13d65.jpg)
 
-
-
-
-
-
-
+![Scratch main page screenshot](https://user-images.githubusercontent.com/104277073/169727084-4e4aa2df-6eb3-46b1-8e3a-e6fe78b94617.jpg)
 
 ## Deployed Application Link
 
