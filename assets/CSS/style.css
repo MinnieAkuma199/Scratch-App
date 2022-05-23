@@ -56,7 +56,7 @@ img {
   background: rgb(71, 34, 34);
   color: rgb(29, 15, 15);
   position: relative;
-  background-image: url(/assets/Images/dog-bg.jpg);
+  background-image: url(/Scratch-App/assets/Images/dog-bg.jpg);
   background-position: center;
   background-size: cover;
   opacity: 0;
