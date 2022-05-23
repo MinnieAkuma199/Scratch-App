@@ -15,3 +15,60 @@
 .modal-trigger-btn {
     opacity: 0.0;
 }
+
+.welcomeHeader {
+  background-color: tan;
+  color: rgb(234, 234, 234);
+  text-align: center;
+}
+
+body {
+  background-color: rgb(43, 34, 34);
+  font-family: "Kanit", sans-serif;
+  font-family: "Permanent Marker", cursive;
+  color: white;
+}
+
+.buttonRefresh {
+  background-color: tan;
+  display: block;
+  width: 100%;
+  border-width: 7px;
+  border-style: groove;
+  border-color: white;
+  border-radius: 10px;
+  /* border: none; */
+}
+
+img {
+  height: 300px;
+  width: 300px;
+  border: ridge 6px;
+  border-color: goldenrod;
+}
+
+#dogImageRandom {
+  text-align: center;
+}
+
+.carousel-item {
+  height: 45rem;
+  background: rgb(71, 34, 34);
+  color: rgb(29, 15, 15);
+  position: relative;
+  background-image: url(/assets/Images/dog-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+}
+.container {
+  background: rgb(250, 223, 188);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+  border: groove 10px;
+  border-color: #64381b;
+  height: 250px;
+}

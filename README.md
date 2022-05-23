@@ -51,3 +51,6 @@ All API's listed in the proposal were used to the best of our ability but in fut
 
 
 
+## Deployed Application Link
+
+https://minnieakuma199.github.io/Scratch-App/
